@@ -17,7 +17,7 @@
             height: 100vh;
         }
         .container {
-        background-color: #000;
+        background-color: #7214A8;
         color: #fff;
         padding: 40px;
         max-width: 800px;
@@ -25,6 +25,7 @@
         text-align: justify;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
+        margin: 20px;
     }
 
     h1 {
@@ -32,6 +33,13 @@
         font-weight: 700;
         margin-bottom: 20px;
         text-align: center;
+    }
+
+    h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-align: left;
     }
 
     p {
@@ -55,6 +63,24 @@
         text-decoration: underline;
     }
 
+    @media (max-width: 1024px) {
+        .container {
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
     @media (max-width: 768px) {
         .container {
             padding: 20px;
@@ -64,8 +90,30 @@
             font-size: 24px;
         }
 
+        h2 {
+            font-size: 18px;
+        }
+
         p {
             font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 22px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 13px;
         }
     }
 </style>
@@ -73,12 +121,16 @@
 <body>
     <div class="container">
         <h1>UNICORN PAYMENTS SL</h1>
-        <p>El conocimiento especializado de Unicorn Payments se encuentra en la construcción de sistemas y arquitecturas de FinTech, NeoBancos y Banca Digital. Ofrecemos a los clientes una amplia gama de servicios de asesoramiento para ayudar a las organizaciones a desarrollar y expandir sus negocios, aumentar su participación en el mercado y establecer una diferenciación competitiva. Nos enfocamos en todas las formas de pagos de los consumidores, incluyendo tarjetas, móviles, pagos instantáneos / pagos en tiempo real, efectivo, comercio electrónico y pagos emergentes.</p>
-        <p>Nuestros expertos están altamente capacitados en el diseño y la implementación de soluciones innovadoras y personalizadas para NeoBancos y entidades de Banca Digital, lo que permite a nuestros clientes mejorar la experiencia del usuario, optimizar procesos internos y garantizar la seguridad en todas las transacciones. Brindamos asesoramiento estratégico de alto nivel, cumplimiento regulatorio, evaluaciones de mercado, revisiones tecnológicas y selección de proveedores.</p>
-
-        <p>Además, ofrecemos apoyo en inversiones en compra/venta y asistencia en el lanzamiento de nuevos productos y servicios financieros, lo que incluye estrategias de marketing, análisis competitivos y evaluación de oportunidades de negocio en el sector de FinTech y Banca Digital.</p>
+        <h2>Expertos en FinTech, NeoBancos y Banca Digital</h2>
+        <p>Unicorn Payments es líder en el desarrollo de sistemas y arquitecturas para la industria financiera. Nos enfocamos en todas las formas de pagos de los consumidores y ofrecemos soluciones innovadoras para mejorar la experiencia del usuario y garantizar la seguridad en las transacciones.</p>
+        <h2>Servicios a medida</h2>
+        <p>Brindamos asesoramiento estratégico, cumplimiento regulatorio, evaluaciones de mercado, revisiones tecnológicas y selección de proveedores, adaptándonos a las necesidades de nuestros clientes y ayudándoles a expandir sus negocios en el competitivo mercado de FinTech y Banca Digital.</p>
+        <h2>Apoyo en inversiones y lanzamiento de nuevos productos</h2>
+        <p>Ofrecemos apoyo en inversiones en compra/venta y asistencia en el lanzamiento de nuevos productos y servicios financieros, incluyendo estrategias de marketing, análisis competitivos y evaluación de oportunidades de negocio.</p>
     
-        <p>Nuestro compromiso es acompañar a las organizaciones en su proceso de transformación digital y adaptación a las tendencias emergentes en la industria financiera, siempre con el objetivo de mejorar la eficiencia, la seguridad y la satisfacción del cliente. Con nuestra experiencia y conocimientos en el campo, nos enorgullecemos de ser un socio confiable para nuestros clientes en su búsqueda de crecimiento y éxito sostenible en el competitivo mercado de FinTech y Banca Digital.</p>
+        <h2>Compromiso con la transformación digital</h2>
+        <p>Nuestro objetivo es acompañar a las organizaciones en su proceso de transformación digital y adaptación a las tendencias emergentes en la industria financiera, mejorando la eficiencia, la seguridad y la satisfacción del cliente.</p>
+    
         <div class="contact">
             <p>Para más información y consultas, no dudes en contactarnos:</p>
             <p>Email: <a href="mailto:hello@unicornpay.app">hello@unicornpay.app</a></p>
@@ -86,4 +138,3 @@
     </div>
 </body>
 </html>
-    
