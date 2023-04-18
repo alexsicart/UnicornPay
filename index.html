@@ -14,25 +14,43 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #f8f8f8;
+            background-color: #7214A8;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             flex-direction: column;
+            color: #fff;
         }
 
         .container {
-            background-color: #7214A8;
-            color: #fff;
-            padding: 40px;
             max-width: 800px;
             line-height: 1.6;
             text-align: justify;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 12px;
             margin: 20px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
         }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    padding-top: 10px;
+}
+
+
 
         h1 {
             font-size: 28px;
@@ -46,6 +64,9 @@
             font-weight: 700;
             margin-bottom: 15px;
             text-align: left;
+            border-bottom: 2px solid #fff;
+            display: inline-block;
+            padding-bottom: 5px;
         }
 
         p {
@@ -53,16 +74,6 @@
             font-weight: 400;
             margin-bottom: 20px;
         }
-
-        .logo {
-        display: block;
-        margin: 0 auto 20px;
-        width: 100px;
-        height: auto;
-        object-fit: contain;
-        object-position: center;
-         }
-
 
         .contact {
             text-align: center;
@@ -130,34 +141,36 @@
             }
         }
 
-        @media (max-width: 480px) {
+        @media
+        (max-width: 480px) {
             body {
-                height: auto;
-                padding: 10px;
+            height: auto;
+            padding: 10px;
             }
-
             .container {
-                padding: 15px;
-            }
+            padding: 15px;
+        }
 
-            h1 {
-                font-size: 22px;
-            }
+        h1 {
+            font-size: 22px;
+        }
 
-            h2 {
-                font-size: 16px;
-            }
+        h2 {
+            font-size: 16px;
+        }
 
-p {
-    font-size: 13px;
-}
-}
+        p {
+            font-size: 13px;
+        }
+    }
 </style>
 </head>
 <body>
     <div class="container">
-        <img src="unicorn.png" alt="Unicorn Payments Logo" class="logo">
-        <h1>UNICORN PAYMENTS SL</h1>
+        <div class="header">
+            <img src="unicorn.png" alt="Unicorn Payments Logo" class="logo">
+            <h1>UNICORN PAYMENTS SL</h1>
+        </div>
         <h2>Expertos en FinTech, NeoBancos y Banca Digital</h2>
         <p>Unicorn Payments es líder en el desarrollo de sistemas y arquitecturas para la industria financiera. Nos enfocamos en todas las formas de pagos de los consumidores y ofrecemos soluciones innovadoras para mejorar la experiencia del usuario y garantizar la seguridad en las transacciones.</p>
         <h2>Servicios a medida</h2>
@@ -179,7 +192,6 @@ p {
             <p>RB CATALUNYA, NUMERO 49-51 P.PP PTA.2 (BARCELONA)</p>
             <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
         </div>
-    </div>
+    </div>   
 </body>
 </html>
-    
