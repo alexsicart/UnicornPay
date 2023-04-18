@@ -4,78 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unicorn Payments SL</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/ovtS4gefS4ZlF0+W2016jBt7fKM1_tC/6Esd06" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            transition: all 0.3s ease;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
         }
 
         body {
-            font-family: 'Montserrat', sans-serif;
             background-color: #7214A8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            color: #fff;
-            background: linear-gradient(135deg, #7214A8 0%, #9A45D6 100%);
+            color: #ffffff;
         }
 
         .container {
-            max-width: 800px;
-            line-height: 1.6;
-            text-align: justify;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            margin: 20px;
-            padding: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 30px;
+            text-align: center;
         }
 
         .header {
-            text-align: center;
-            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .logo {
-            display: block;
-            margin: 0 auto 20px;
-            max-width: 100px;
-            height: auto;
-            object-fit: contain;
-            object-position: center;
-            padding-top: 10px;
+            max-width: 150px;
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-size: 28px;
+            font-size: 36px;
             font-weight: 700;
             margin-bottom: 20px;
-            text-align: center;
-            color: #ffffff;
-            text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         h2 {
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 700;
-            margin-bottom: 15px;
-            text-align: left;
-            color: #ffffff;
+            margin-bottom: 20px;
             text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         p {
-            font-size: 16px;
-            font-weight: 400;
-            margin-bottom: 20px;
-            color: #ffffff;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.6;
             text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
         }
 
@@ -87,17 +66,16 @@
         }
 
         .service {
-            text-align: center;
-            background-color: rgba(255, 255,
-            255, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding: 20px;
             border-radius: 8px;
-            cursor: pointer;
-            transform: translateY(0);
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .service:hover {
-            background-color: rgba(255, 255, 255, 0.15);
             transform: translateY(-5px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
@@ -114,50 +92,34 @@
             margin-top: 20px;
             font-weight: 400;
         }
-
-        .contact a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        .contact a:hover {
-            text-decoration: underline;
-        }
-
         .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
             font-size: 14px;
-            text-align: center;
-            margin-top: 30px;
         }
 
         .footer a {
-            color: #4CAF50;
+            color: #ffffff;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         .footer a:hover {
-            text-decoration: underline;
+            color: #dddddd;
         }
 
         @media (max-width: 767px) {
-            .container {
-                padding: 30px;
-            }
-
             h1 {
-                font-size: 24px;
+                font-size: 30px;
             }
 
             h2 {
-                font-size: 20px;
+                font-size: 22px;
             }
 
-            .services {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            }
-
-            .service-icon {
-                font-size: 36px;
+            p {
+                font-size: 16px;
             }
         }
     </style>
@@ -169,40 +131,31 @@
             <h1>Unicorn Payments SL</h1>
         </div>
 
+        <p>
+            El conocimiento especializado de Unicorn Payments se encuentra en la construcción de sistemas y arquitecturas de FinTech, NeoBancos y Banca Digital. Ofrecemos a los clientes una amplia gama de servicios de asesoramiento para ayudar a las organizaciones a desarrollar y expandir sus negocios, aumentar su participación en el mercado y establecer una diferenciación competitiva.
+        </p>
+
         <h2>Nuestros servicios</h2>
         <div class="services">
             <div class="service">
                 <i class="fas fa-credit-card service-icon"></i>
-                <p>Soluciones de pago rápidas y seguras para tu negocio.</p>
+                <h3>Tarjetas y pagos móviles</h3>
+                <p>Mejore la experiencia del usuario con soluciones de pago innovadoras y seguras.</p>
             </div>
             <div class="service">
-                <i class="fas fa-mobile-alt service-icon"></i>
-                <p>Aplicaciones móviles intuitivas y fáciles de usar.</p>
+                <i class="fas fa-chart-line service-icon"></i>
+                <h3>Asesoramiento estratégico</h3>
+                <p>Brindamos asesoramiento estratégico y evaluaciones de mercado para impulsar el crecimiento del negocio.</p>
             </div>
             <div class="service">
                 <i class="fas fa-shield-alt service-icon"></i>
-                <p>Protección de datos y seguridad de la información.</p>
+                <h3>Cumplimiento regulatorio</h3>
+                <p>Ayudamos a las organizaciones a cumplir con las regulaciones y proteger los datos del cliente.</p>
             </div>
         </div>
 
-        <p>En Unicorn Payments SL, ofrecemos soluciones de pago innovadoras y seguras para ayudar a tu negocio a crecer y prosperar. Nuestro equipo de expertos trabaja incansablemente para desarrollar aplicaciones móviles y sistemas de pago que faciliten la vida de nuestros clientes y les permitan concentrarse en lo que mejor saben hacer.</p>
-
         <div class="contact">
-            <p>¿Tienes alguna pregunta o necesitas ayuda? No dudes en ponerte en contacto con nosotros:</p>
-            <p><a href="mailto:hello@unicornpay.app">hello@unicornpay.app</a
-            </p>
-        </div>
-
-        <h2>Testimonios de clientes</h2>
-        <div class="testimonials">
-            <blockquote>
-                <p>"Unicorn Payments SL ha sido un socio fundamental en el crecimiento de nuestro negocio. Su plataforma es fácil de usar y su equipo siempre está dispuesto a ayudar. ¡No podríamos estar más contentos!"</p>
-                <footer>- Maria Fernández, CEO de E-commerce Company</footer>
-            </blockquote>
-            <blockquote>
-                <p>"Nos encanta trabajar con Unicorn Payments SL. Sus soluciones de pago son rápidas, seguras y confiables, lo que nos permite centrarnos en hacer crecer nuestro negocio y atender a nuestros clientes."</p>
-                <footer>- Juan Pérez, Fundador de Tech Startup</footer>
-            </blockquote>
+            <p>Contáctanos a través de <a href="mailto:hello@unicornpay.app">hello@unicornpay.app</a> para obtener más información.</p>
         </div>
 
         <div class="footer">
@@ -211,36 +164,6 @@
             <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
         </div>
     </div>
-
-    <style>
-        blockquote {
-            margin-bottom: 20px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-        }
-
-        blockquote p {
-            font-size: 16px;
-            font-weight: 400;
-            margin-bottom: 10px;
-            color: #ffffff;
-            text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-        }
-
-        blockquote footer {
-            font-size: 14px;
-            font-weight: 700;
-            text-align: right;
-            color: #ffffff;
-            text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-        }
-
-        @media (max-width: 767px) {
-            .testimonials {
-                font-size: 14px;
-            }
-        }
-    </style>
 </body>
 </html>
+
