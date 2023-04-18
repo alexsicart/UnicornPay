@@ -11,6 +11,7 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            transition: all 0.3s ease;
         }
 
         body {
@@ -87,100 +88,159 @@
 
         .service {
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255,
+            255, 0.1);
             padding: 20px;
             border-radius: 8px;
+            cursor: pointer;
+            transform: translateY(0);
+        }
+
+        .service:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .service-icon {
             font-size: 48px;
             margin-bottom: 10px;
+            color: #ffffff;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
-.contact {
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 400;
-}
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 400;
+        }
 
-.contact a {
-    color: #4CAF50;
-    text-decoration: none;
-}
+        .contact a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
 
-.contact a:hover {
-    text-decoration: underline;
-}
+        .contact a:hover {
+            text-decoration: underline;
+        }
 
-.footer {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 30px;
-}
+        .footer {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 30px;
+        }
 
-.footer a {
-    color: #4CAF50;
-    text-decoration: none;
-}
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
 
-.footer a:hover {
-    text-decoration: underline;
-}
+        .footer a:hover {
+            text-decoration: underline;
+        }
 
-@media (max-width: 1024px) {
-    .container {
-        padding: 30px;
-    }
+        @media (max-width: 767px) {
+            .container {
+                padding: 30px;
+            }
 
-    h1 {
-        font-size: 26px;
-    }
+            h1 {
+                font-size: 24px;
+            }
 
-    h2 {
-        font-size: 20px;
-    }
+            h2 {
+                font-size: 20px;
+            }
 
-    .services {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-}
-</style>
+            .services {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .service-icon {
+                font-size: 36px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-<div class="header">
-    <img class="logo" src="unicorn.png" alt="Unicorn Payments SL">
-    <h1>Unicorn Payments SL</h1>
-</div>
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="unicorn.png" alt="Unicorn Payments SL">
+            <h1>Unicorn Payments SL</h1>
+        </div>
 
-<h2>Nuestros servicios</h2>
-<div class="services">
-    <div class="service">
-        <i class="fas fa-credit-card service-icon"></i>
-        <p>Soluciones de pago rápidas y seguras para tu negocio.</p>
+        <h2>Nuestros servicios</h2>
+        <div class="services">
+            <div class="service">
+                <i class="fas fa-credit-card service-icon"></i>
+                <p>Soluciones de pago rápidas y seguras para tu negocio.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <p>Aplicaciones móviles intuitivas y fáciles de usar.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-shield-alt service-icon"></i>
+                <p>Protección de datos y seguridad de la información.</p>
+            </div>
+        </div>
+
+        <p>En Unicorn Payments SL, ofrecemos soluciones de pago innovadoras y seguras para ayudar a tu negocio a crecer y prosperar. Nuestro equipo de expertos trabaja incansablemente para desarrollar aplicaciones móviles y sistemas de pago que faciliten la vida de nuestros clientes y les permitan concentrarse en lo que mejor saben hacer.</p>
+
+        <div class="contact">
+            <p>¿Tienes alguna pregunta o necesitas ayuda? No dudes en ponerte en contacto con nosotros:</p>
+            <p><a href="mailto:hello@unicornpay.app">hello@unicornpay.app</a
+            </p>
+        </div>
+
+        <h2>Testimonios de clientes</h2>
+        <div class="testimonials">
+            <blockquote>
+                <p>"Unicorn Payments SL ha sido un socio fundamental en el crecimiento de nuestro negocio. Su plataforma es fácil de usar y su equipo siempre está dispuesto a ayudar. ¡No podríamos estar más contentos!"</p>
+                <footer>- Maria Fernández, CEO de E-commerce Company</footer>
+            </blockquote>
+            <blockquote>
+                <p>"Nos encanta trabajar con Unicorn Payments SL. Sus soluciones de pago son rápidas, seguras y confiables, lo que nos permite centrarnos en hacer crecer nuestro negocio y atender a nuestros clientes."</p>
+                <footer>- Juan Pérez, Fundador de Tech Startup</footer>
+            </blockquote>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2023 Unicorn Payments SL. Todos los derechos reservados.</p>
+            <p>RB CATALUNYA, NUMERO 49-51 P.PP PTA.2 (BARCELONA)</p>
+            <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+        </div>
     </div>
-    <div class="service">
-        <i class="fas fa-mobile-alt service-icon"></i>
-        <p>Aplicaciones móviles intuitivas y fáciles de usar.</p>
-    </div>
-    <div class="service">
-        <i class="fas fa-shield-alt service-icon"></i>
-        <p>Protección de datos y seguridad de la información.</p>
-    </div>
-</div>
 
-<p>En Unicorn Payments SL, ofrecemos soluciones de pago innovadoras y seguras para ayudar a tu negocio a crecer y prosperar. Nuestro equipo de expertos trabaja incansablemente para desarrollar aplicaciones móviles y sistemas de pago que faciliten la vida de nuestros clientes y les permitan concentrarse en lo que mejor saben hacer.</p>
+    <style>
+        blockquote {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
 
-<div class="contact">
-    <p>¿Tienes alguna pregunta o necesitas ayuda? No dudes en ponerte en contacto con nosotros:</p>
-    <p><a href="mailto:hello@unicornpay.app">hello@unicornpay.app</a></p>
-</div>
+        blockquote p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+        }
 
-<div class="footer">
-    <p>&copy; 2023 Unicorn Payments SL. Todos los derechos reservados.</p>
-    <p>RB CATALUNYA, NUMERO 49-51 P.PP PTA.2 (BARCELONA)</p>
-    <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
-</div>
-</div>
+        blockquote footer {
+            font-size: 14px;
+            font-weight: 700;
+            text-align: right;
+            color: #ffffff;
+            text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 767px) {
+            .testimonials {
+                font-size: 14px;
+            }
+        }
+    </style>
 </body>
 </html>
